@@ -1,8 +1,9 @@
 import React from 'react'
+import Layout from '../components/Layout/Layout'
 
 function Products() {
   return (
-    <div>Products</div>
+    <Layout>Products</Layout>
   )
 }
 
