@@ -8,7 +8,6 @@ function Navbar() {
     const inactiveLink = 'flex gap-1 p-1';
     const activeLink = inactiveLink+ " bg-white text-blue-950 rounded-lg font-semibold"
     const pathname = usePathname();
-    console.log({pathname})
     
   return (
     <aside className='text-white p-4 pr-0'>
