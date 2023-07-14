@@ -1,5 +1,7 @@
 "use client"
+
 import { useSession, signIn, signOut } from "next-auth/react"
+import Navbar from "./components/Navbar/Navbar"
 
 
 export default function Home() {
@@ -15,9 +17,17 @@ export default function Home() {
   }
 
   return(
-    <div className='bg-blue-900 w-screen h-screen flex items-center'>
+   <div>
+    <header>
+<Navbar/>
+<div className='bg-blue-900 w-screen h-screen flex'>
      Logged in {session?.user?.name}
     </div>
+    </header>
+    <div className='bg-blue-900 w-screen h-screen flex'>
+     Logged in {session?.user?.name}
+    </div>
+   </div>
   )
 }
 
