@@ -17,7 +17,7 @@ export default function Home() {
         <>
           <span className="ps-1">  Wellcome <span className="p-1 font-bold">  {session?.user?.name}</span> </span>
           {/* <Image
-            src={session.user.image}
+            src={session?.user?.image}
             alt="User Image"
             width={100}
             height={100}
